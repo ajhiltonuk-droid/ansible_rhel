@@ -13,4 +13,4 @@
       ansible.builtin.user:
         name: roger
         state: present
-        create_home: true
+        create_home:  true
