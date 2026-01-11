@@ -3,8 +3,8 @@
   hosts: web
   become: true
   tasks:
-    -name: Update all security packages
-      ansible.builtin.package
+    - name: Update all security packages
+      ansible.builtin.yum:
         name: '*'
         state: latest
         security: true
